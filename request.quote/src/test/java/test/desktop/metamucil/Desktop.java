@@ -170,8 +170,8 @@ public class Desktop {
 			   csvFileToRead = data2;
 			}
 		  
-		  else if (browser.equals("browserIE7")) {
-			  driver=browserIE7();
+		  else if (browser.equals("browserIE11")) {
+			  driver=browserIE11();
 			   csvFileToRead = data2;
 			}
 		  
@@ -760,14 +760,14 @@ public class Desktop {
 	    
 	 }
 	 
-	 public WebDriver browserIE7() throws MalformedURLException  
+	 public WebDriver browserIE11() throws MalformedURLException  
 	 {  
 	  
 		
 		 String URL = "http://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("browser", "IE");
-		 caps.setCapability("browser_version", "7.0");
+		 caps.setCapability("browser_version", "11.0");
 		 caps.setCapability("os", "Windows");
 		 caps.setCapability("os_version", "XP");
 		 caps.setCapability("resolution", "1024x768");
