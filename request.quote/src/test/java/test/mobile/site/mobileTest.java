@@ -45,11 +45,11 @@ public class mobileTest {
 		static String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 	    int counter=1;
 		String local=(new java.io.File("").getAbsolutePath());
-		String data="" + local + "/" + "metamucilprodcution.csv";	
-		String data2="" + local + "/" + "metamucilprodcutiondesktop.csv";	
+		String data="" + local + "/" + "tampax.csv";	
+		String data2="" + local + "/" + "tampax.csv";	
 		String myTitle;
 		String csvFileToRead;
-	    String safe = "http://10.10.10.34:8080/job/TESTNG3/ws/PageLoads";
+	  //  String safe = "http://10.10.10.34:8080/job/TESTNG3/ws/PageLoads";
 	  @Test(groups = {"create"})
 		@Parameters({"browser"})
 	  @BeforeClass
