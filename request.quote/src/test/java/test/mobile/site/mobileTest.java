@@ -49,7 +49,7 @@ public class mobileTest {
 		String data2="" + local + "/" + "tampax.csv";	
 		String myTitle;
 		String csvFileToRead;
-	  //  String safe = "http://10.10.10.34:8080/job/TESTNG3/ws/PageLoads";
+	  String safe = "http://10.10.10.34:8080/job/TESTNG3/ws/PageLoads";
 	  @Test(groups = {"create"})
 		@Parameters({"browser"})
 	  @BeforeClass
