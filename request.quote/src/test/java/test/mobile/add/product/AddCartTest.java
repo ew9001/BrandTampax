@@ -186,7 +186,7 @@ public class AddCartTest {
 			  csvFileToRead = data2;
 			}
 		  
-		  else if (browser.equals("ie11")) {
+		  else if (browser.equals("browserIE11")) {
 			  driver=browserIE11();
 			   csvFileToRead = data2;
 			}
