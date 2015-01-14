@@ -186,8 +186,8 @@ public class AddCartTest {
 			  csvFileToRead = data2;
 			}
 		  
-		  else if (browser.equals("ie9")) {
-			  driver=browserIE9();
+		  else if (browser.equals("ie11")) {
+			  driver=browserIE11();
 			   csvFileToRead = data2;
 			}
 		  
@@ -306,6 +306,34 @@ public class AddCartTest {
 	     driver.quit();
 	 }
 
+	 public WebDriver browserIE11() throws MalformedURLException  
+	 {  
+	  
+		 System.out.println("Let me run mobileGalaxyS3");
+		 String URL = "http://" + USERNAME + ":" + AUTOMATE_KEY + "@hub.browserstack.com/wd/hub";
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		 caps.setCapability("browser", "IE");
+		 caps.setCapability("browser_version", "11.0");
+		 caps.setCapability("os", "Windows");
+		 caps.setCapability("os_version", "7");
+		 caps.setCapability("resolution", "1024x768");
+		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.local", "true");
+		 caps.setCapability("acceptSslCerts", "true");
+		    driver = new RemoteWebDriver(new URL(URL), caps);
+	      System.out.println("Let me run IE11");
+	      browser_type="browserIE11";
+	      System.out.println("Let me see which one get tested" +browser_type);
+	      System.out.println("Let me see which one get tested" +driver);
+	      driver.get("http://m.crest.com");
+	      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	      System.out.println(data);
+	      return driver;
+	   
+	    
+	      
+	 } 
+	 
 	 public WebDriver mobileGalaxyS3() throws MalformedURLException  
 	 {  
 	  
