@@ -276,7 +276,7 @@ public class AddCartTest {
 				        System.out.println("Image Name is  " +name);
 				        takeScreenPortrait(name);
 		        }
-		        driver.findElement(By.id("imgCloseButton")).click();
+		        
 		        counter+=1;
 		    
 
