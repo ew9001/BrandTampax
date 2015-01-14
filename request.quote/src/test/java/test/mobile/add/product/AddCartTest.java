@@ -273,9 +273,10 @@ public class AddCartTest {
 		        jse.executeScript("scroll(0, 14700)"); //y value '250' can be altered
 		        	   driver.manage().timeouts().implicitlyWait(450000, TimeUnit.SECONDS);
 		        	 name=""+ browser+"/portrait/" + browser +"_"+ counter + "_" + "Successful-Scrolled-Capture.png";
-				        System.out.println("Image Name " +name);
+				        System.out.println("Image Name is  " +name);
 				        takeScreenPortrait(name);
 		        }
+		        driver.findElement(By.id("imgCloseButton")).click();
 		        counter+=1;
 		    
 
